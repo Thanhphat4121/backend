@@ -6,6 +6,7 @@ const db = mysql.createConnection({
   user: process.env.DB_USER || "root",
   password: process.env.DB_PASS || "",
   database: process.env.DB_NAME || "csdl_bandt",
+  port: process.env.DB_PORT || "3306"
 });
 
 module.exports = db;
